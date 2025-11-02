@@ -1,4 +1,5 @@
 # DIO
+Repositório para armazenar conhecimentos obtidos no curso DIO Santander Code Girls 2025 - Módulo Gerenciamento e Governança na AWS.
 
 # AWS Cloud Formation
 Serviço que automatiza a criação, atualização e exclusão de recursos da AWS usando arquivos de configuração (templates em YAML ou JSON).
