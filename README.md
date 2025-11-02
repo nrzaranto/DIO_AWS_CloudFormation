@@ -1,9 +1,20 @@
 # DIO
-Repositório para armazenar conhecimentos obtidos no curso DIO Santander Code Girls 2025 - Módulo Gerenciamento e Governança na AWS.
+Repositório para armazenar conhecimentos obtidos no curso DIO Santander Code Girls 2025 - Módulo Gerenciamento e Governança na AWS e Módulo Desenvolvimento e Ferramenta.
 
 # AWS Cloud Formation
-Serviço que automatiza a criação, atualização e exclusão de recursos da AWS usando arquivos de configuração (templates em YAML ou JSON).
-Ou seja, ao invés de criar recursos manualmente no console, um arquivo de configuração é escrito e o CloudFormation cria tudo automaticamente.
+IaC (Infrastructure as Code) é a prática de definir e gerenciar toda a infraestrutura de TI através de código, em vez de configurá-la manualmente pelo console.
+
+CloudFormation é o serviço AWS que implementa este conceito através da automatização da criação, configuração e gerenciamento de toda a infraestrutura em nuvem usando arquivos de configuração (templates em YAML ou JSON).
+
+Ou seja, ao invés de criar manualmente, os recursos necessários são configurados em um template que é executado no CloudFormation e utilizado para que a AWS provisione automaticamente todos esses recursos.
+
+Algumas das principais vantagens de utilizar esta abordagem são:
+
+- Padronização: todos os ambientes utilizam a mesma configuração.
+- Replicação: facilidade o processo de replicar a infraestrutura em outra região.
+- Controle de versão: sincronização com Git é disponível, permitindo armazenar e versionar os templates
+- Automação: a infraestrutura é criada através da utilizaçãod e um único recurso.
+- Falhas: em caso de falhas, o CloudFormation possui a capacidade de reverter todas as mudanças.
 
 **Exemplo de Template para criação de S3 Bucket (arquivo .yaml salvo no repositório):**
 ![Template](Imagens/Template.png)
