@@ -4,23 +4,8 @@
 Serviço que automatiza a criação, atualização e exclusão de recursos da AWS usando arquivos de configuração (templates em YAML ou JSON).
 Ou seja, ao invés de criar recursos manualmente no console, um arquivo de configuração é escrito e o CloudFormation cria tudo automaticamente.
 
-**Exemplo de Template para criação de S3 Bucket:**
-'''
-AWSTemplateFormatVersion: '2010-09-09'
-Description: Backup Storage Bucket
-
-Resources:
-  BackupStorageBucket:
-    Type: AWS::S3::Bucket
-    Properties: {}
-
-Outputs:
-  BackupStorageBucketName:
-    Description: Storage bucket for database backup
-    Value: !Ref BackupStorageBucket
-    Export:
-      Name: !Sub "${AWS::StackName}-BackupStorageBucketName"
-'''
+**Exemplo de Template para criação de S3 Bucket (arquivo .yaml salvo no repositório):**
+![Template](Imagens/Template.png)
 
 **Componentes do Template:**
 - AWSTemplateFormatVersion: define o formato da versão do template.
